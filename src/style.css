@@ -59,4 +59,9 @@ body {
   height: 100%;
   padding: 30px;
   border-radius: 20px;
+  width: 600px;
+}
+.loc {
+  text-align: center;
+  margin: 20px;
 }
