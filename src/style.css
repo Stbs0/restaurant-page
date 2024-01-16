@@ -44,8 +44,9 @@ body {
   align-items: center;
   justify-content: center;
 }
-.items > il {
+.items > li {
   padding: 20px;
+  list-style: none;
 }
 .nav-btn {
   font-size: 1.3rem;
