@@ -1,21 +1,23 @@
 import "./style.css";
-
+import menu from "./menu.js";
 import homePage from "./page-loader.js";
+import about from "./about.js";
+
 homePage();
-const menu = document.querySelector(".menu");
+const menuBtn = document.querySelector(".menu-nav");
 const homePageBtn = document.querySelector(".home-page");
-const about = document.querySelector(".about");
+const aboutBtn = document.querySelector(".about");
 const content = document.querySelector("#content");
 
 homePageBtn.addEventListener("click", () => {
   content.innerHTML = "";
   homePage();
 });
-menu.addEventListener("click", () => {
+menuBtn.addEventListener("click", () => {
   content.innerHTML = "";
   menu();
 });
-about.addEventListener("click", () => {
+aboutBtn.addEventListener("click", () => {
   content.innerHTML = "";
   about();
 });

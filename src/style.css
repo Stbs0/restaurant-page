@@ -61,7 +61,63 @@ body {
   border-radius: 20px;
   width: 600px;
 }
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .loc {
   text-align: center;
   margin: 20px;
 }
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu-header,
+.contact-heading {
+  text-align: center;
+  border: 10px solid orange;
+  border-radius: 40px;
+  width: 200px;
+  outline: 5px solid red;
+}
+.menu {
+  border: 10px solid orange;
+  text-align: center;
+  border-radius: 50px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+.menu h2 {
+  border: 5px solid red;
+  padding: 5px;
+  border-radius: 50px;
+}
+.salad,
+.burger {
+  width: 300px;
+  padding: 10px;
+}
+.conatct-main {
+  margin-top: 40px;
+}
+.para {
+  font-size: 1.5rem;
+}
+/* <div class="main">
+        <div class="main-content">
+          <div class="block">
+            <h1 class="contact-heading">contact</h1>
+            <div class="conatct-main">
+              <p class="tel para"><strong>Tell</strong>: +966502669168</p>
+            </div>
+            <p class="email para"><strong>Email</strong> mohammedjrt@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      <footer class="footer"><p>by stbs</p></footer> */
