@@ -1,7 +1,7 @@
 export default function about() {
   const content = document.querySelector("#content");
-  content.innerHTML = "";
-  content.innerHTML = `
+  
+ return content.innerHTML = `
     <div class="nav">
       <div class="logo">
         <img class="img" src="/src/assets/logo.png" alt="logo" />

@@ -22,16 +22,18 @@ homePageBtn.addEventListener("click", () => {
   return homePage();
 });
 
-menuBtn.addEventListener("click", () => {
+menuBtn.addEventListener(
+  "click",
+  menu
   // Clear the content area
-  content.innerHTML = "";
+  // content.innerHTML = "";
   // Load the menu page
-  return menu();
-});
+);
 
-aboutBtn.addEventListener("click", () => {
+aboutBtn.addEventListener(
+  "click",
+  about
   // Clear the content area
-  content.innerHTML = "";
+  // content.innerHTML = "";
   // Load the about page
-  return about();
-});
+);
