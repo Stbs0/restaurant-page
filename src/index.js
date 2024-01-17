@@ -10,9 +10,9 @@ import about from "./about.js";
 homePage();
 
 // Get references to the navigation buttons and the content area
-const menuBtn = document.querySelector(".menu-nav");
-const homePageBtn = document.querySelector(".home-page");
-const aboutBtn = document.querySelector(".about");
+const menuBtn = document.querySelector(".Menu");
+const homePageBtn = document.querySelector(".Home");
+const aboutBtn = document.querySelector(".About");
 
 // Add event listeners to the navigation buttons to load the corresponding pages
 homePageBtn.addEventListener("click", () => {
