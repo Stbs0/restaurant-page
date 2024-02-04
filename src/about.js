@@ -1,54 +1,53 @@
 export default function about() {
   const content = document.querySelector("#content");
 
-  // Create the main container div
   const mainContainer = document.createElement("div");
   mainContainer.classList.add("nav");
 
-  // Create the logo div
-  const logoDiv = document.createElement("div");
-  logoDiv.classList.add("logo");
+  // // Create the logo div
+  // const logoDiv = document.createElement("div");
+  // logoDiv.classList.add("logo");
 
-  // Create the logo image
-  const logoImg = document.createElement("img");
-  logoImg.classList.add("img");
-  logoImg.src = "/src/assets/logo.png";
-  logoImg.alt = "logo";
+  // // Create the logo image
+  // const logoImg = document.createElement("img");
+  // logoImg.classList.add("img");
+  // logoImg.src = "/src/assets/logo.png";
+  // logoImg.alt = "logo";
 
-  // Append the logo image to the logo div
-  logoDiv.appendChild(logoImg);
+  // // Append the logo image to the logo div
+  // logoDiv.appendChild(logoImg);
 
-  // Create the nav items div
-  const navItemsDiv = document.createElement("div");
-  navItemsDiv.classList.add("nav-items");
+  // // Create the nav items div
+  // const navItemsDiv = document.createElement("div");
+  // navItemsDiv.classList.add("nav-items");
 
-  // Create the ul element
-  const ulElement = document.createElement("ul");
-  ulElement.classList.add("items");
+  // // Create the ul element
+  // const ulElement = document.createElement("ul");
+  // ulElement.classList.add("items");
 
-  // Create list items and anchor elements
-  const menuItems = ["Home", "Menu", "About"];
-  menuItems.forEach((itemText) => {
-    const liElement = document.createElement("li");
-    const aElement = document.createElement("a");
-    aElement.classList.add("nav-btn");
-    aElement.href = "#";
-    aElement.textContent = itemText;
+  // // Create list items and anchor elements
+  // const menuItems = ["Home", "Menu", "About"];
+  // menuItems.forEach((itemText) => {
+  //   const liElement = document.createElement("li");
+  //   const aElement = document.createElement("a");
+  //   aElement.classList.add("nav-btn");
+  //   aElement.href = "#";
+  //   aElement.textContent = itemText;
 
-    // Append anchor element to list item
-    liElement.appendChild(aElement);
+  //   // Append anchor element to list item
+  //   liElement.appendChild(aElement);
 
-    // Append list item to ul element
-    ulElement.appendChild(liElement);
-  });
+  //   // Append list item to ul element
+  //   ulElement.appendChild(liElement);
+  // });
 
-  // Append ul element to nav items div
-  navItemsDiv.appendChild(ulElement);
+  // // Append ul element to nav items div
+  // navItemsDiv.appendChild(ulElement);
 
-  // Append logo div and nav items div to the main container div
-  mainContainer.appendChild(logoDiv);
-  mainContainer.appendChild(navItemsDiv);
-
+  // // Append logo div and nav items div to the main container div
+  // mainContainer.appendChild(logoDiv);
+  // mainContainer.appendChild(navItemsDiv);
+  content.innerHTML = "";
   // Create the main content div
   const mainContentDiv = document.createElement("div");
   mainContentDiv.classList.add("main");
@@ -101,7 +100,10 @@ export default function about() {
   footerElement.appendChild(footerPara);
 
   // Clear existing content in the container and append the new content
-  content.innerHTML = "";
-  content.appendChild(mainContainer);
-  content.appendChild(footerElement);
+  const pageWrapper = document.createElement("div");
+  pageWrapper.classList.add("page-wrapper");
+  content.appendChild(pageWrapper);
+  pageWrapper.appendChild(mainContentDiv);
+ 
+  pageWrapper.appendChild(footerElement);
 }

@@ -12,27 +12,31 @@ body {
   flex-direction: column;
   align-items: center;
 }
-#content {
-  flex: 1 1 0;
-  display: flex;
+header {
   width: 100%;
-  flex-direction: column;
-  /* background-color: antiquewhite; */
-  /* padding: 30px; */
-}
-.nav {
+  display: grid;
   height: 100px;
-  display: flex;
-  justify-content: flex-start;
+  grid-template-columns: 100px 1fr;
+  justify-content: center;
   background-color: beige;
   border-bottom: 1px solid silver;
   box-shadow: 0 2px 3px silver;
 }
 .logo {
-  margin-left: 10px;
+  justify-self: flex-start;
 }
+
+.nav {
+  height: 100px;
+
+  display: flex;
+  justify-content: flex-start;
+  background-color: beige;
+}
+
 .img {
   width: 100px;
+  height: 100px;
 }
 .nav-items {
   display: flex;
@@ -48,11 +52,31 @@ body {
   padding: 20px;
   list-style: none;
 }
-.nav-btn {
+.home-btn,
+.menu-btn,
+.about-btn {
   font-size: 1.3rem;
-  text-decoration: none;
+  border-radius: 20px;
+  background-color: rosybrown;
   color: black;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
 }
+.home-btn:active,
+.menu-btn:active,
+.about-btn:active {
+  box-shadow: inset 2px 2px 5px black;
+}
+#content {
+  flex: 1 1 0;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  /* background-color: antiquewhite; */
+  /* padding: 30px; */
+}
+
 .main {
   align-self: center;
   background-color: blanchedalmond;
@@ -109,6 +133,11 @@ body {
 }
 .para {
   font-size: 1.5rem;
+}
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 /* <div class="main">
         <div class="main-content">
