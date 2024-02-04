@@ -73,8 +73,7 @@ header {
   display: flex;
   width: 100%;
   flex-direction: column;
-  /* background-color: antiquewhite; */
-  /* padding: 30px; */
+  
 }
 
 .main {
@@ -139,15 +138,4 @@ header {
   flex-direction: column;
   align-items: center;
 }
-/* <div class="main">
-        <div class="main-content">
-          <div class="block">
-            <h1 class="contact-heading">contact</h1>
-            <div class="conatct-main">
-              <p class="tel para"><strong>Tell</strong>: +966502669168</p>
-            </div>
-            <p class="email para"><strong>Email</strong> mohammedjrt@gmail.com</p>
-          </div>
-        </div>
-      </div>
-      <footer class="footer"><p>by stbs</p></footer> */
+
